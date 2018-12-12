@@ -29,13 +29,36 @@ class Person {
         return `${this.firstName} ${this.lastName}`;
     }
     plot() {
-        '<div class="profile">' + this.firstName + ' ' + this.lastName + '</div>'
+        var newDiv = document.createElement("div"); 
+        newDiv.setAttribute("class", "callingCard" );
+        var newContent = document.createTextNode(this.getFullName()); 
+        newDiv.appendChild(newContent);  
+        //'<div class="profile">' + this.firstName + ' ' + this.lastName + '</div>'
+        var currentDiv = document.getElementById("div1"); 
+        document.body.insertBefore(newDiv, currentDiv);
+    
     }
+
 }
 
+const p1 = new Person('Jan-Willem', 'Haeke');
+const p2 = new Person('Bart','Brinks');
+const p3= new Person('Rene','Spijker');
+const p4 = new Person('Richard','Alp');
+const p5 = new Person('Marcella','Hadderingh');
+const p6 = new Person('Constant','Zwijnenberg');
+const p7 = new Person('Jack','Sleebos');
+const p8 = new Person('Cris','Adamus');
+const p9 = new Person('Chelan','Keijzer');
+const p10 = new Person('Stas','Sinyakov');
+const p11 = new Person('Martijn','Blokhuis');
+const p12 = new Person('Anke','Ebbelink');
+const p13 = new Person('Clemens','Jongma');
+const p14 = new Person('Simone','Wildenborg');
+const p15 = new Person('Maha','Almasri');
+const p16 = new Person('Douglas','Bowman');
+const p17 = new Person('Jeroen','Wichers');
 
-
-const jw = new Person('Jan-Willem', 'Haeke', 'www.google.come');
 
 function create() {
     jw.plot();
