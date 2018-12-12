@@ -1,20 +1,13 @@
-.wrapper {
-    height: 150px;
-    width: 450px;
+/*
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+*/
+.callingCard {
+    padding: 10px;
+    background-color: white;
+    color: black;
     border: 1px solid black;
 }
 
-#pic {
-    float: left;
-}
-
-.callingCard {
-    height: 150px;
-    width: 450px;
-    background-color: black;
-}
-
-.pic {
-    height: 150px;
-    background-image: url();
-}

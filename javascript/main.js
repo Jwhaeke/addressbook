@@ -35,7 +35,7 @@ class Person {
         newDiv.appendChild(newContent);  
         //'<div class="profile">' + this.firstName + ' ' + this.lastName + '</div>'
         var currentDiv = document.getElementById("wrapper"); 
-        document.body.insert(newDiv, currentDiv);
+        document.body.insertBefore(newDiv, currentDiv);
     
     }
 
@@ -45,6 +45,8 @@ class Person {
     
 
 // }
+
+
 
 const p1 = new Person('Jan-Willem', 'Haeke');
 const p2 = new Person('Bart','Brinks');
@@ -64,13 +66,39 @@ const p15 = new Person('Maha','Almasri');
 const p16 = new Person('Douglas','Bowman');
 const p17 = new Person('Jeroen','Wichers');
 
+var list = [
+    p1,
+    p2,
+    p3,
+    p4,
+    p5,
+    p6,
+    p7,
+    p8,
+    p9,
+    p10,
+    p11,
+    p12,
+    p13,
+    p14,
+    p15,
+    p16,
+    p17
+  ];
+
 
 function create() {
-    p1.plot();
+    //p1.plot();
+list.forEach(element => {
+    element.plot();
+  });
 }
 
-// console.log(jw.getFullName());
 
+
+
+
+// Need to create another object which will hold more complex functions and holds an array of the people
 // adres boek {
 //         persoon lijst[]
 //         plot()
