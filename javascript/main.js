@@ -34,12 +34,17 @@ class Person {
         var newContent = document.createTextNode(this.getFullName()); 
         newDiv.appendChild(newContent);  
         //'<div class="profile">' + this.firstName + ' ' + this.lastName + '</div>'
-        var currentDiv = document.getElementById("div1"); 
-        document.body.insertBefore(newDiv, currentDiv);
+        var currentDiv = document.getElementById("wrapper"); 
+        document.body.insert(newDiv, currentDiv);
     
     }
 
 }
+
+// var book {
+    
+
+// }
 
 const p1 = new Person('Jan-Willem', 'Haeke');
 const p2 = new Person('Bart','Brinks');
@@ -61,7 +66,7 @@ const p17 = new Person('Jeroen','Wichers');
 
 
 function create() {
-    jw.plot();
+    p1.plot();
 }
 
 // console.log(jw.getFullName());
