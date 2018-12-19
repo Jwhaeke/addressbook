@@ -109,11 +109,14 @@ function write() {
         
     var ul = document.createElement('ul');
     ul.setAttribute("id", "id1" );
+    ul.setAttribute("class", "list-group" );
+
     document.getElementById('div1').appendChild(ul);
     
     list.forEach(element =>  {
         var named = element.getFullName();
         var li = document.createElement('li');
+        li.setAttribute("class", "list-group-item" );
         ul.appendChild(li);
         li.innerHTML += named;
     });

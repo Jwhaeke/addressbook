@@ -13,17 +13,19 @@
 
 <body onload="write()">
     <div class="container">
-        <h1 class="">Name List</h1>
-        <hr>
+       <div class="jumbotron">
+        <h1>Name List</h1>
+        <p>A great way to find who you are looking for or to add them to the list</p>
+    </div>
+      
+    
         <input id="myFilterBox" type="text" onkeyup="myFilterFunction();" placeholder="Filter...">  
         <input id="myNewName" type="text" placeholder="New...">
-        <button onclick="voegIemandToe();">Add</button>
-        
-        <button onclick="sortList()">Sort A-Z</button>
-        <button onclick="sortList2()">Sort Z-A</button>
-
-        <br>
-        
+        <button class="btn" onclick="voegIemandToe();">Add</button><br>
+        <button class="btn" onclick="sortList()">Sort A-Z</button>
+        <button class="btn" onclick="sortList2()">Sort Z-A</button>
+        <hr>       
+                
         <div id="wrapper">
             <div id="div1">
 
